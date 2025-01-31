@@ -6,12 +6,14 @@ analysis:
 1. choose between RAG,LoRa, fine-tuning/training
    fine-tuning/training is selected. Reason: trained model can be used in further projects.
 3. choose llm
-4. choose training method/infrastructure
-5. choose deployment method/infrastructure
-6. choose evaluation method
-7. decide on GUI technology stack
+   bert-large-uncased. Reason: small in size but big enough to provide good chart output. lower training cost.
+5. choose training method/infrastructure
+   azure ml studio. Reason: easy to use, and i have free credit
+7. choose deployment method/infrastructure
+8. choose evaluation method
+9. decide on GUI technology stack
    html,css,javascript. Reason: author is familiar with them
-9. choose translation api from google,aws,azure
+10. choose translation api from google,aws,azure
 
 
 preperation:
