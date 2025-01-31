@@ -24,3 +24,6 @@ preperation:
 
 flow-runtime: 
 user>question-to-chatbot>translator-api>prepare pompt>llm>generated text>post-process>translator-api>answer-to-user
+
+prepare training data
+code in preprocess_data.ipynb colab notebook creates trainig data in csv file.
