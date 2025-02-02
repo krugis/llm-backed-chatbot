@@ -39,3 +39,12 @@ user>question-to-chatbot>translator-api>prepare pompt>llm>generated text>post-pr
         }'
       BERT expect content for Q&A style of text generation. it is not efficient.
 
+2. DeepkSeek R1 7B + RAG
+Deployment>RAG>inference endpoint
+a. deployment: ollama with cpu only mode used
+curl -fsSL https://ollama.com/install.sh | sh
+ollama pull deepseek-r1:14b
+sudo apt update && sudo apt upgrade -y
+sudo apt install python3-pip -y
+pip install -r requirements.txt
+
