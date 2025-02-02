@@ -3,9 +3,9 @@ goal:
 create a chatbot which will help end customer visiting a landing page of a SaaS about product features and guide him to sales. It should support Turkish and English
 
 analysis:
-1. choose between RAG,LoRa, fine-tuning/training: fine-tuning/training is selected. Reason: trained model can be used in further projects.
-3. choose llm: bert-large-uncased. Reason: small in size but big enough to provide good chart output. lower training cost.
-5. choose training method/infrastructure: aws sagemaker studio is selected. Reason: easy to use, and i have free credit
+1. choose between RAG,LoRa, fine-tuning/training: 
+3. choose llm: 
+5. choose training method/infrastructure: 
 7. choose deployment method/infrastructure
 8. choose evaluation method
 9. decide on GUI technology stack
@@ -22,5 +22,20 @@ preperation:
 flow-runtime: 
 user>question-to-chatbot>translator-api>prepare pompt>llm>generated text>post-process>translator-api>answer-to-user
 
-prepare training data
-code in preprocess_data.ipynb colab notebook creates trainig data in csv file.
+1. BERT + fine-tuning:
+   pretraining and training
+      colab is used for pretraining and training
+      code in preprocess_data.ipynb colab notebook creates trainig data in csv file.
+      code in train-bert.ipnnb includes scripts for training the model
+      trained model is uplaoded to hugging face as atekrugis/bert_uncased_qa_model
+   inference
+      virtual machine in azure is used for inference
+      endpoint-bert.py calls required libraries and exposes an api using fastapi
+   result:
+      test with
+         curl -X 'POST'   'http://localhost:3456/answer'   -H 'Content-Type: application/json'   -d '{
+          "question": "What is the capital of France?",
+          "context": "The capital of France is Paris."
+        }'
+      BERT expect content for Q&A style of text generation. it is not efficient.
+
