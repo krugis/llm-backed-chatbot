@@ -64,5 +64,10 @@ response time is 1.72 seconds
 
 code: llama_api.py
 
+B. choose chatbot UI
+
+alternatives:
+
+https://deepchat.dev/examples/design
 
 
