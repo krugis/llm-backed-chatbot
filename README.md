@@ -62,7 +62,7 @@ llama cpp is used for faster response
 
 response time is 1.72 seconds
 
-code: 
+code: llama_api.py
 
 
 
