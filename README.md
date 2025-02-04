@@ -48,12 +48,20 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install python3-pip -y
 pip install -r requirements.txt
 
-3.Quantized llama 3.2 self hosted on 32GB memory and 4 cpu
+3.Llama 3.2 + RAG:
+
+Quantized llama 3.2 self hosted on 32GB memory and 4 cpu
+
 llama-3.2-1b-q5_k_m.gguf is used for inference
+
 /paraphrase-MiniLM-L3-v2 is used for crating embedding vector to query vector store
+
 faiss vector is used for faster response
+
 llama cpp is used for faster response
+
 response time is 1.72 seconds
+
 code: 
 
 
