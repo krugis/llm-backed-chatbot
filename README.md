@@ -70,4 +70,5 @@ alternatives:
 
 https://deepchat.dev/examples/design
 
+https://jvcodes.com/responsive-ai-chatbot-using-html-css-and-javascript/
 
